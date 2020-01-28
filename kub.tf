@@ -32,7 +32,7 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
 
 resource "google_compute_subnetwork" "network-with-private-secondary-ip-ranges" {
   name                     = "test-subnetwork"
-  ip_cidr_range            = "10.2.0.0/16"
+  ip_cidr_range            = "10.3.0.0/16"
   region                   = "us-east1"
   network                  = "${google_compute_network.custom-test.self_link}"
   private_ip_google_access = "true"
