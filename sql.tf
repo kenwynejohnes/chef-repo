@@ -31,7 +31,7 @@ resource "google_sql_database_instance" "prod-epmcseclab-db" {
     backup_configuration {
            binary_log_enabled  = "true"
            enabled             = "true"
-           start_time          = "12:00"
+           start_time          = "12:10"
        }
 
  
